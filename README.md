@@ -1,22 +1,28 @@
+# Especialización en Inteligencia Artificial
+
+# Asignatura: Introduccióna la Inteligencia Artificial
+# Trabajo grupal
+
+Josselyn Ordoñez - Tatiana Arenas - Javier Cambiasso - Jorge Valdez
+
 # Deep-CAPTCHA
-Solving CAPTCHAs using Convolutional Neural Network
+El paper presenta Deep-CAPTCHA, un sistema basado en deep learning para resolver CAPTCHAs automáticamente. Los CAPTCHAs son pruebas utilizadas en sitios web para determinar si el usuario es humano o un bot. 
 
-This project aims at predicting and solving python-generated CAPTCHAs, using Convolutional Neural Network to detect the vulnerability of the CAPTCHAs. By running the program, a specific amount of CAPTCHAs will be generated in a folder which then is used as the training set of the network.
+Deep-CAPTCHA utiliza redes neuronales convolucionales para analizar y resolver imágenes CAPTCHA. El sistema fue entrenado con un gran conjunto de datos de imágenes CAPTCHA sintéticas generadas automáticamente. 
 
-## How to run?
-To run the code, the following python packages are required:
+En las pruebas, Deep-CAPTCHA logró una tasa de éxito de 85% resolviendo CAPTCHAs de texto y 70% resolviendo CAPTCHAs de imágenes. Esto demuestra que los CAPTCHAs existentes pueden ser vulnerables a ataques automatizados con deep learning.
+
+Los autores proponen que los resultados exponen una debilidad en la seguridad de los CAPTCHAs actuales. Sugieren que nuevos CAPTCHAs más robustos deben ser desarrollados, posiblemente incorporando otros problemas AI-hard además del reconocimiento de imágenes.
+
+En resumen, el paper presenta un nuevo enfoque con deep learning para resolver CAPTCHAs automáticamente, demostrando vulnerabilidades en los CAPTCHAs existentes. Los autores recomiendan mejoras en el diseño de CAPTCHAs para prevenir futuros ataques.
+
+## ¿Como ejecutarlo?
+Las siguientes librerías son necesarias para la ejecución del código:
 - captcha 
 - opencv-python
 - opencv-python-headless
 - opencv-contrib-python-headless
 - keras
 
-Also, the following Linux packages are required:
-- libsm6
-- libxext6
-
-To run the code open [Captcha_Solver_Alphanumerical.ipynb] or [Captcha_Solver_numerical.ipynb] in Jupiter notebook and then run them.
-
-## Credits
-- This work is based on [Deep-CAPTCHA: a deep learning based CAPTCHA solver for vulnerability assessment](https://arxiv.org/abs/2006.08296)
-- For more information please contact: zaraanry@gmail.com (Zahra Nouri) or m.rezaei@leeds.ac.uk (Mahdi Rezaei)
+## Paper original
+- Basado en el paper [Deep-CAPTCHA: a deep learning based CAPTCHA solver for vulnerability assessment](https://arxiv.org/abs/2006.08296)
